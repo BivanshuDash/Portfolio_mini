@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bivanshu - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(88, 129, 87);
+            color: rgb(52, 78, 65);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(218, 215, 205);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(52, 78, 65);
+        }
+
+        nav ul li a:hover {
+            color: rgb(88, 129, 87);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 160px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            background: rgb(58, 90, 64);
+            color: rgb(218, 215, 205);
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 19px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 90%;
+        }
+
+        .green {
+            color: rgb(163, 177, 138);
+
+        }
+
+        #element {
+            color: rgb(218, 215, 205);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            color: rgb(218, 215, 205);
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(163, 177, 138);
+            height: 1.3px;
+            margin: 60px 85px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-green {
+            color: rgb(52, 76, 65);
+            font-size: 25px;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 79vw;
+            height: 2px;
+            margin: 75px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 180px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 35px;
+            width: 150px;
+            font-size: 20px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 45px;
+            color: rgb(163, 177, 138);
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .image-top {
+            width: 60px;
+            position: relative;
+            top: -65px;
+            left: -30px;
+        }
+
+        footer {
+            background-color: rgb(218, 215, 205);
+            height: 250px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-around;
+        }
+
+        .footer ul {
+            list-style: disc;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 5px 0;
+        }
+        .buttons a{
+            color:rgb(163, 177, 138) ;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bivanshu's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="concepts.html" target="_blank">Concepts</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>
+                <li><a href="about.html" target="_blank">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="green">Bivanshu</span>
+                <div>and I am an inquisitive</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="Resume.pdf" download>Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/BivanshuDash" alt="">Github</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg1.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-green">What I have done so far...</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="school.jpeg" alt="">
+                    <div class="vertical-title">
+                        Student and SSC alumni (2008-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        School Cultural Captain of Ashoka House
+                        Google App Inventor Acknowledged
+                        10th boards 96%
+                        Also,being a scholar in many olympiads
+                        Indo-Korean essay writing winner
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="school2.png" alt="">
+                    <div class="vertical-title">
+                        Student and HSC alumni (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                       12th boards 86%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="school3.jpeg" alt="">
+                    <div class="vertical-title">
+                        IIT-JEE Aspirant (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Was a serious aspirant for IIT and studied in a presitigous academy for its preparatin in kota.
+                        Made in inculcate and realize the values of hardworking,patience and resilience
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="school4.png" alt="">
+                    <div class="vertical-title">
+                      B.Tech Undergraduate in CSE-Cloud Computing (2020-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        1st year cgpa :9.6
+                        hackathon enthusiast
+                        IBM python 101 acknowledgment
+                        ENDURO IIT Hyderabad Ceritfied
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <span class="text-green">My gains and skillz....</span>
+            <h1>Upskilling</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML developer
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="vertical-title">
+                       CSS developer
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="cpp.png" alt="">
+                    <div class="vertical-title">
+                     C++ Coder
+                </div>
+              </div>
+              <div class="vertical">
+                <img class="image-top" src="python.png" alt="">
+                <div class="vertical-title">
+                 Python Coder
+            </div>
+          </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bivanshu's Creator Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>bd7664@srmist.edu.in</li>
+                    <li>RA221028010032</li>
+                    <li>NWC-Cloud Computing</li>
+                    <li>Phone: 7037774364</li>
+                    <li><a style="text-decoration: none; color:rgb(52, 76, 65) ;" href="https://www.linkedin.com/in/bivanshu-dash-67b987229/">LinkedIn</a></li>
+                    <li><a style="text-decoration: none; color:rgb(52, 76, 65) ;" href="https://github.com/BivanshuDash">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; bivanshusportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'College Sophomore'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

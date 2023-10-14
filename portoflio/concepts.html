@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(88, 129, 87);
+            color: rgb(52, 78, 65);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(218, 215, 205);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(52, 78, 65);
+        }
+
+        nav ul li a:hover {
+            color: rgb(88, 129, 87);
+            font-size: 1.05rem;
+        }
+
+        nav .left {
+            font-size: 40px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 160px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            margin: 20px 30px;
+            font-size: 20px;
+            color: rgb(218, 215, 205);
+        }
+
+
+        .rightSection {
+            font-size: 20px;
+            color: rgb(218, 215, 205);
+
+        }
+
+        .green {
+            color: rgb(163, 177, 138);
+
+        }
+
+        footer {
+            background-color: rgb(218, 215, 205);
+            height: 250px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-around;
+        }
+
+        .footer ul {
+            list-style: disc;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 5px 0;
+        }
+
+        .leftSection .h {
+            font-size: 45px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">What i learnt in DSA?</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="concepts.html" target="_blank">Concepts</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>
+                <li><a href="about.html" target="_blank">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="leftSection">
+            <h1>Linked List</h1>
+            A singly linked list is a linear data structure that includes a series of connected nodes. Each node
+            stores the data and the address of the next node. The first node in the list is called the head, and the
+            last node is identified because its next portion points to NULL.
+
+            Each node in a singly linked list is represented as a struct or a class, depending on the programming
+            language. For instance, in C++, a node can be represented as a class with two members: a value and a
+            pointer to the next node. In Python, a node can be represented as a dictionary with two keys: 'data' and
+            'next'.
+            <Br>
+            <br>
+            <p>In a singly linked list, you can perform several operations:
+
+                1.Insertion: You can insert a node at the beginning of the list (head), at the end of the list
+                (tail),
+                or at a specific position. The process involves creating a new node, setting its data and next
+                pointer, and
+                updating the next pointer of the previous node to point to the new node.
+                <br>
+                <br>
+                2.Deletion: You can delete a node from the list. This involves updating the next pointer of the
+                previous
+                node to point to the next node of the node to be deleted. If the node to be deleted is the head or
+                tail
+                of the list, you need to update the head or tail pointer accordingly.
+                <br>
+                <br>
+                3.Searching: You can search for a node in the list by traversing the list from the head node and
+                comparing the data of each node with the data you are looking for.
+            </p>
+            <img style="width: 500px;" src="sll1.png" alt="">
+            <br>
+            <br>
+            <h1>Trees</h1>
+            A tree data structure is a hierarchical structure used to represent and organize data in a way that is
+            easy to navigate and search. It is a collection of nodes that are connected by edges and has a
+            hierarchical relationship between the nodes. The topmost node of the tree is called the root, and the
+            nodes below it are called the child nodes. Each node can have multiple child nodes, and these child
+            nodes can also have their own child nodes, forming a recursive structure.
+
+            A node in a tree data structure is typically represented as a struct or a class, depending on the
+            programming language. For instance, in C++, a node can be represented as a class with two members: a
+            value and a pointer to the next node. In Python, a node can be represented as a dictionary with two
+            keys: 'data' and 'next'.
+            <br>
+            <br>
+            <p>In a tree, you can perform several operations:
+
+                1.Search: You can search for a node in the tree by traversing the tree from the root node and
+                comparing the data of each node with the data you are looking for.
+                <br>
+                <br>
+                2.Traversal: You can traverse the tree in different orders: pre-order (root, left, right), in-order
+                (left, root, right), and post-order (left, right, root).
+                <br>
+                <br>
+                3.Insertion: You can insert a node in the tree. The process involves creating a new node, setting
+                its
+                data and pointers, and updating the pointers of the parent node to point to the new node.
+                <br>
+                <br>
+                4.Deletion: You can delete a node from the tree. This involves updating the pointers of the parent
+                node to point to the child nodes of the node to be deleted. If the node to be deleted is the root of
+                the tree, you need to update the root pointer accordingly.
+                <br>
+                <br>
+                There are several types of trees, including binary trees, ternary trees, N-ary trees, and B-trees.
+                Each type of tree has its own characteristics and uses.
+                <br>
+                <br>
+            </p>
+            <img style="width: 500px;" src="t.png" alt="">
+            <h1>Arrays</h1>
+            An array is a linear data structure that stores elements of the same type in contiguous memory
+            locations. The elements in an array are identified by their indices, which start from 0. The size of an
+            array is determined by the number of elements it can contain.
+
+            Arrays are classified as homogeneous data structures because they store elements of the same type. Once
+            you define the type of values that your array will store, all its elements must be of that same type.
+            You can't "mix" different types of data in an array.
+            <br>
+            <br>
+            <p>You can perform several operations on an array:
+                1.Accessing Elements: You can access the elements of an array using their indices. For example,
+                arr[0]
+                accesses the first element of the array, arr[1] accesses the second element, and so on.
+                <br>
+                <br>
+                2.Modifying Elements: You can modify the elements of an array by assigning new values to them using
+                their
+                indices. For example, arr[0] = 10; changes the first element of the array to 10.
+                <br>
+                <br>
+                3.Traversing Elements: You can traverse the elements of an array by using a loop.
+                <br>
+                <br>
+            </p>
+            <img style="width: 500px;" src="arr.png" alt="">
+            <h1>Graphs</h1>
+            A graph is a non-linear data structure that consists of nodes (also called vertices) and edges. The nodes
+            are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the
+            graph. The intersections of the edges and nodes are called vertices.
+
+            A graph can be either directed or undirected. In a directed graph, the edges have a direction associated
+            with them, meaning that the edge from node A to node B is different from the edge from node B to node A. In
+            an undirected graph, the edges do not have a direction, meaning that the edge from node A to node B is the
+            same as the edge from node B to node A.
+            <br>
+            <br>
+            <p>You can perform several operations on a graph:
+                1.Adding a Vertex: You can add a vertex to the graph by creating a new element in the adjacency list
+                array.
+                <br>
+                <br>
+                2.Adding an Edge: You can add an edge between two vertices by adding the second vertex to the adjacency
+                list of the first vertex, and vice versa.
+                <br>
+                <br>
+                3.Deleting a Vertex: You can delete a vertex from the graph by removing the vertex from the adjacency list
+                array and removing all edges that connect to the vertex.
+                <br>
+                <br>
+                4.Deleting an Edge: You can delete an edge between two vertices by removing the second vertex from the
+                adjacency list of the first vertex, and vice versa.
+                <br>
+                <br>
+                5.Searching: You can search for a vertex in the graph by traversing the adjacency list array.
+                <br>
+                <br>
+                6.Traversal: You can traverse the graph in different orders: depth-first search (DFS) and breadth-first
+                search (BFS).
+                <br>
+                <br>
+            </p>
+            <img style="width: 500px;" src="graphs.jpg" alt="">
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bivanshu's Creator Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>bd7664@srmist.edu.in</li>
+                    <li>RA221028010032</li>
+                    <li>NWC-Cloud Computing</li>
+                    <li>Phone: 7037774364</li>
+                    <li><a style="text-decoration: none; color:rgb(52, 76, 65) ;"
+                            href="https://www.linkedin.com/in/bivanshu-dash-67b987229/">LinkedIn</a></li>
+                    <li><a style="text-decoration: none; color:rgb(52, 76, 65) ;"
+                            href="https://github.com/BivanshuDash">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; bivanshusportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
